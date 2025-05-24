@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INKWELL™ - Read. Write. Belong.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="floating-particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">INKWELL™</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#founder">About</a></li>
+                <li><a href="#waitlist" class="cta-nav">Join Waitlist</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Read. Write. Belong.</h1>
+                    <p class="tagline">The revolutionary platform where stories come to life and writers find their voice</p>
+                    <p class="hero-description">
+                        Join thousands of readers and writers in a community that celebrates storytelling. 
+                        Discover your next favorite book, share your stories with the world, and connect 
+                        with fellow book lovers who understand your passion.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToWaitlist()">
+                            <i class="fas fa-rocket"></i>
+                            Join the Revolution
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToFeatures()">
+                            <i class="fas fa-play"></i>
+                            See How It Works
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="5000">0</span>
+                            <span class="stat-label">Writers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="25000">0</span>
+                            <span class="stat-label">Readers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="15000">0</span>
+                            <span class="stat-label">Stories</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="book-stack">
+                        <div class="book book-1"></div>
+                        <div class="book book-2"></div>
+                        <div class="book book-3"></div>
+                        <div class="magic-particles"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need to Create & Discover</h2>
+                <p>Powerful tools for writers, immersive experience for readers</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Advanced Writing Studio</h3>
+                    <p>Professional text editor with autosave, collaboration tools, and formatting options that make writing a joy.</p>
+                    <ul class="feature-list">
+                        <li>Smart autosave & version control</li>
+                        <li>Chapter management</li>
+                        <li>Writing analytics</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Immersive Reading</h3>
+                    <p>Clean, distraction-free reading experience with customizable themes and interactive features.</p>
+                    <ul class="feature-list">
+                        <li>Dark/light mode toggle</li>
+                        <li>Adjustable text size</li>
+                        <li>Reading progress tracking</li>
+                        <li>Bookmarks & highlights</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Vibrant Community</h3>
+                    <p>Connect with fellow readers and writers through comments, reviews, and follower systems.</p>
+                    <ul class="feature-list">
+                        <li>Follow favorite authors</li>
+                        <li>Chapter-by-chapter comments</li>
+                        <li>Reader reviews & ratings</li>
+                        <li>Writing groups & forums</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Smart Discovery</h3>
+                    <p>AI-powered recommendations and advanced search help you find your next favorite story.</p>
+                    <ul class="feature-list">
+                        <li>Personalized recommendations</li>
+                        <li>Genre & tag filtering</li>
+                        <li>Trending stories</li>
+                        <li>Advanced search engine</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Beta Users Say</h2>
+                <p>Join thousands who've already discovered the future of reading and writing</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="zoom-in">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"INKWELL™ has transformed how I write. The collaboration features helped me finish my novel faster than ever before!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b002?w=60&h=60&fit=crop&crop=face" alt="Sarah M.">
+                        <div>
+                            <h4>Sarah Martinez</h4>
+                            <span>Romance Novelist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As a reader, I love the clean interface and how easy it is to discover new authors. The recommendation system is spot-on!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Mike R.">
+                        <div>
+                            <h4>Michael Rodriguez</h4>
+                            <span>Avid Reader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The community aspect is incredible. I've connected with so many amazing writers and readers who share my passion!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Emma T.">
+                        <div>
+                            <h4>Emma Thompson</h4>
+                            <span>Fantasy Writer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder" id="founder">
+        <div class="container">
+            <div class="founder-content">
+                <div class="founder-image">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="Founder">
+                    <div class="founder-badge">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="founder-text">
+                    <h2>A Message from Our Founder</h2>
+                    <p class="founder-intro">
+                        "Every great story deserves to be told, and every reader deserves to find their next adventure."
+                    </p>
+                    <p>
+                        I created INKWELL™ because I believe in the transformative power of storytelling. As both a writer and voracious reader, 
+                        I was frustrated by platforms that either catered to writers OR readers, but never both with equal passion.
+                    </p>
+                    <p>
+                        INKWELL™ is different. We're building a home for storytellers and story-lovers alike – a place where creativity 
+                        flourishes, communities form, and the next generation of beloved stories comes to life.
+                    </p>
+                    <p>
+                        Join us in revolutionizing how stories are shared, discovered, and celebrated. The future of storytelling starts here.
+                    </p>
+                    <div class="founder-signature">
+                        <span>Alex Chen, Founder & CEO</span>
+                        <div class="signature-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section class="waitlist" id="waitlist">
+        <div class="container">
+            <div class="waitlist-content">
+                <div class="waitlist-header">
+                    <h2>Be Among the First</h2>
+                    <p>Join our exclusive waitlist and get early access to INKWELL™ when we launch</p>
+                </div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdH2_PYyPG3KhNb5DrCrW_AT2HSGOfIUUO7lIFxNFsZZmbc_Q/viewform?usp=header" target="_blank" class="btn-primary btn-full">
+    Join the Waitlist
+</a>
+
+                <div class="waitlist-perks">
+                    <div class="perk">
+                        <i class="fas fa-crown"></i>
+                        <span>Early Access</span>
+                    </div>
+                    <div class="perk">
+                        <i class="fas fa-gift"></i>
+                        <span>Exclusive Features</span>
+                    </div>
+                    <div class="perk">
+                        <i class="fas fa-users"></i>
+                        <span>Founder Community</span>
+                    </div>
+                </div>
+                <div class="social-proof">
+                    <span class="waitlist-count">
+                        <strong id="waitlistCount">10</strong> writers and readers already joined
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">INKWELL™</div>
+                    <p>Where stories come to life and writers find their voice.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/5SADXaNWWH" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Platform</h4>
+                        <a href="#">For Writers</a>
+                        <a href="#">For Readers</a>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="https://discord.gg/5SADXaNWWH" target="_blank">Discord</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Writing Tips</a>
+                        <a href="#">Success Stories</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 INKWELL™. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Welcome to INKWELL™!</h3>
+            </div>
+            <div class="modal-body">
+                <p>You're now on our exclusive waitlist. We'll notify you as soon as INKWELL™ launches!</p>
+                <div class="modal-perks">
+                    <div class="modal-perk">
+                        <i class="fas fa-bolt"></i>
+                        <span>Early access to beta features</span>
+                    </div>
+                    <div class="modal-perk">
+                        <i class="fas fa-star"></i>
+                        <span>Founder's community membership</span>
+                    </div>
+                    <div class="modal-perk">
+                        <i class="fas fa-gift"></i>
+                        <span>Exclusive launch bonuses</span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="closeModal()">
+                Got it, thanks!
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
